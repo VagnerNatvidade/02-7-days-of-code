@@ -1,8 +1,77 @@
+main {
+  background: var(--light-200);
+}
+
 main h2 {
   padding: 0.8rem 5%;
 }
 
 .card {
+  margin: 0 1.6rem 1.6rem;
   padding: 1.6rem 5%;
+  border-radius: 0.8rem;
   background: var(--light-100);
+  box-shadow: 0 0.5rem 1rem #e0e0e0;
+}
+
+.card-user {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.2rem;
+  border-bottom: 0.1rem solid var(--dark-100);
+}
+
+.card img {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-right: 1.6rem;
+  border-radius: 50rem;
+  object-fit: cover;
+}
+
+.card strong {
+  margin-bottom: 0.8rem;
+}
+
+.fa-message {
+  margin-left: auto;
+  padding: 0.8rem;
+  border-radius: 50rem;
+  color: var(--sec-color);
+  background: var(--light-200);
+}
+
+.time {
+  margin: 0.8rem 0;
+  font-size: 1.2rem;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.card button {
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid var(--dark-100);
+  background-color: transparent;
+  transition: 0.2s ease;
+}
+
+.card .video-call {
+  border: none;
+  background-color: var(--pri-color);
+}
+
+.video-call:hover {
+  cursor: pointer;
+  color: var(--light-100);
+  background-color: #ffb050cc;
+}
+
+.audio-call:hover {
+  cursor: pointer;
+  color: var(--light-100);
+  background-color: var(--dark-100);
 }

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("./styles//header.css");
-@import url("./styles//main.css");
+@import url("./styles/header.css");
+@import url("./styles/main.css");
 
 * {
   margin: 0;
@@ -16,7 +16,7 @@
   --dark-100: #a3a3a3;
   --dark-200: #464646;
   --light-100: #ffffff;
-  --light-200: #f9f9f9;
+  --light-200: #f6f6f6;
   --pri-color: #ffb050;
   --sec-color: #4894ff;
 }
@@ -30,8 +30,7 @@ body::after {
   height: 100%;
   opacity: 0.3;
   z-index: -1;
-  background: var(--light-200) url("./assets/background_img.png") no-repeat
-    center/cover;
+  background: url("./assets/background_img.png") no-repeat center/cover;
 }
 
 body * {
