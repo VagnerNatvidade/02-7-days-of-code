@@ -6,8 +6,8 @@ header {
 }
 
 header img {
-  width: 5.6rem;
-  height: 5.6rem;
+  max-width: 5.6rem;
+  max-height: 5.6rem;
   border-radius: 5rem;
 }
 

@@ -28,9 +28,10 @@ footer a:hover > i {
   color: var(--sec-color);
 }
 
-footer button {
+footer button,
+footer label {
   position: absolute;
-  right: 4rem;
+  right: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,33 +39,54 @@ footer button {
   height: 4rem;
   border: none;
   border-radius: 100rem;
-  color: var(--light-100);
   background-color: var(--sec-color);
   box-shadow: 0 0 1rem var(--sec-color);
   transition: 0.2s ease;
 }
 
-footer button:hover {
-  scale: 1.25;
-}
-
-footer i {
+footer button i,
+.add i {
   color: var(--light-100);
 }
 
-.add-btn {
+footer button:hover,
+.add:hover {
+  scale: 1.25;
+}
+
+.add {
   top: -5rem;
 }
 
+#add:checked ~ button {
+  display: initial;
+}
+
 .location-btn,
-.time-btn {
+.time-btn,
+footer input {
   display: none;
 }
 
 .location-btn {
   top: -10rem;
+  animation: rightToLeft 0.2s ease;
 }
 
 .time-btn {
   top: -15rem;
+  animation: rightToLeft 0.2s ease 0.2s forwards;
+  animation-fill-mode:backwards;
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateY(-20rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
