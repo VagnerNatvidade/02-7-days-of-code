@@ -1,5 +1,11 @@
 main {
+  grid-area: main;
+  overflow: auto;
   background: var(--light-200);
+}
+
+main::-webkit-scrollbar {
+  display: none;
 }
 
 main h2 {
@@ -11,7 +17,7 @@ main h2 {
   padding: 1.6rem 5%;
   border-radius: 0.8rem;
   background: var(--light-100);
-  box-shadow: 0 0.5rem 1rem #e0e0e0;
+  box-shadow: 0 0.5rem 1rem #cfcfcf;
 }
 
 .card-user {
@@ -19,6 +25,11 @@ main h2 {
   align-items: center;
   padding-bottom: 1.2rem;
   border-bottom: 0.1rem solid var(--dark-100);
+}
+
+.card-user div i,
+.card-user div span {
+  font-size: 1.2rem;
 }
 
 .card img {
@@ -61,12 +72,12 @@ main h2 {
 
 .card .video-call {
   border: none;
+  color: var(--light-100);
   background-color: var(--pri-color);
 }
 
 .video-call:hover {
   cursor: pointer;
-  color: var(--light-100);
   background-color: #ffb050cc;
 }
 
@@ -74,4 +85,11 @@ main h2 {
   cursor: pointer;
   color: var(--light-100);
   background-color: var(--dark-100);
+}
+
+.card .address {
+  width: 100%;
+  border: none;
+  color: var(--light-100);
+  background-color: var(--sec-color);
 }

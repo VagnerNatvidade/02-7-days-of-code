@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("./styles/header.css");
 @import url("./styles/main.css");
+@import url("./styles/footer.css");
 
 * {
   margin: 0;
@@ -21,7 +22,7 @@
   --sec-color: #4894ff;
 }
 
-body::after {
+body::before {
   content: "";
   position: absolute;
   top: 0;
@@ -31,6 +32,15 @@ body::after {
   opacity: 0.3;
   z-index: -1;
   background: url("./assets/background_img.png") no-repeat center/cover;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 12rem 75vh 6rem;
 }
 
 body * {
