@@ -81,7 +81,7 @@ footer input {
 
 @media (min-width: 1024px) {
   footer {
-    border-right: .2rem solid var(--light-200);
+    border-right: 0.2rem solid var(--light-200);
     box-shadow: none;
     background-color: var(--light-100);
   }
@@ -100,6 +100,12 @@ footer input {
     flex-direction: row;
     gap: 0.8rem;
     font-size: 1.8rem;
+  }
+
+  #dd,
+  .location-btn,
+  .time-btn {
+    display: none;
   }
 }
 
