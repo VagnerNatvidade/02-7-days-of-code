@@ -35,12 +35,13 @@ body::before {
 }
 
 body {
+  height: 100vh;
   display: grid;
   grid-template-areas:
     "header"
     "main"
     "footer";
-  grid-template-rows: 12rem 75vh 6rem;
+  grid-template-rows: max-content 1fr max-content;
 }
 
 body * {
