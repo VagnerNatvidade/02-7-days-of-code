@@ -79,6 +79,30 @@ footer input {
   animation-fill-mode: backwards;
 }
 
+@media (min-width: 1024px) {
+  footer {
+    border-right: .2rem solid var(--light-200);
+    box-shadow: none;
+    background-color: var(--light-100);
+  }
+
+  footer nav {
+    padding: 2.4rem;
+  }
+
+  footer nav {
+    align-items: start;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  footer nav a {
+    flex-direction: row;
+    gap: 0.8rem;
+    font-size: 1.8rem;
+  }
+}
+
 @keyframes rightToLeft {
   0% {
     transform: translateY(-20rem);

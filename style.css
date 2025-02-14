@@ -53,3 +53,14 @@ body * {
 a {
   text-decoration: none;
 }
+
+@media (min-width: 1024px) {
+  body {
+    grid-template-areas:
+      "footer header"
+      "footer main"
+      "footer main";
+    grid-template-rows: max-content 1fr;
+    grid-template-columns: max-content 1fr;
+  }
+}
