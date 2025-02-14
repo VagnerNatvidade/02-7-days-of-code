@@ -1,5 +1,6 @@
 main {
   grid-area: main;
+  padding: 0 5%;
   overflow: auto;
   background: var(--light-200);
 }
@@ -9,12 +10,17 @@ main::-webkit-scrollbar {
 }
 
 main h2 {
-  padding: 0.8rem 5%;
+  padding: 0.8rem 0;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
-  margin: 0 1.6rem 1.6rem;
-  padding: 1.6rem 5%;
+  margin-bottom: 1.6rem;
+  padding: 1.6rem;
   border-radius: 0.8rem;
   background: var(--light-100);
   box-shadow: 0 0.5rem 1rem #cfcfcf;
@@ -50,6 +56,7 @@ main h2 {
   border-radius: 50rem;
   color: var(--sec-color);
   background: var(--light-200);
+  transition: .2s ease;
 }
 
 .time {
@@ -63,6 +70,7 @@ main h2 {
 }
 
 .card button {
+  flex: 1;
   padding: 1.2rem 1.6rem;
   border-radius: 0.8rem;
   border: 0.1rem solid var(--dark-100);
@@ -92,4 +100,29 @@ main h2 {
   border: none;
   color: var(--light-100);
   background-color: var(--sec-color);
+  transition: 0.2s ease;
+}
+
+.address:hover,
+.fa-message:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
+}
+
+@media (min-width: 1024px) {
+  .card-container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 49%;
+  }
+}
+
+@media (min-width: 1728px) {
+  .card {
+    width: 32%;
+  }
 }

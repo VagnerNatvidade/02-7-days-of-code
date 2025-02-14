@@ -76,7 +76,7 @@ footer input {
 .time-btn {
   top: -15rem;
   animation: rightToLeft 0.2s ease 0.2s forwards;
-  animation-fill-mode:backwards;
+  animation-fill-mode: backwards;
 }
 
 @keyframes rightToLeft {
